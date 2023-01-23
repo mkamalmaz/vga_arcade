@@ -10,4 +10,4 @@ The code produces 2-bit color output, and in this project we have used the follo
 10: Red    1 0 0
 11: White  1 1 1
 
----4e
+---5e
