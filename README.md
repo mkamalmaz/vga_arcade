@@ -11,3 +11,6 @@ The code produces 2-bit color output, and in this project we have used the follo
 11: White  1 1 1
 
 ---5e
+
+tobias
+
