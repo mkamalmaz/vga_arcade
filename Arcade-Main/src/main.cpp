@@ -151,7 +151,7 @@ static const char str16[] PROGMEM="VGA Arcade"; //TH:
 static const char str17[] PROGMEM="1TE663";     //TH:
 static const char str18[] PROGMEM="Game Over!!!"; 
 
-#define BUTTON_PIN A2          //TH: Digital
+#define BUTTON_PIN D7          //TH: Digital
 #define WHEEL_PIN 3            //TH: Analog
 
                                //TH:---vvv---
@@ -234,7 +234,7 @@ void toneL(int frequency, int duration) {
 void processInputs() {
   padPositionOld = padPosition; 
   wheelPosition = analogRead(WHEEL_PIN);
-  buttonStatus = digitalRead(BUTTON_PIN); 
+  buttonStatus = (digitalRead(BUTTON_PIN)); //TH: Changed to active low 
   padPosition = map(wheelPosition, 1023, 0, 1 + PadLenght, width - 1 - PadLenght); 
 }
 
